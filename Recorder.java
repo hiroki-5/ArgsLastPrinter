@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Recorder {
-private Map<String,String> map = new HashMap<>();
+	private Map<String,String> map = new HashMap<>();
 
 	public void put(String key, String value) {
 		map.put(key, value);
