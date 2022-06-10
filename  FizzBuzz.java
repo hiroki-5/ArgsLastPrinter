@@ -22,8 +22,8 @@ public class  FizzBuzz {
 			}
            /* 3. 表示しようとしている数字が5で割り切れるか？を確認する
      - 割り切れるときだけ、変数 `result` に、文字列 `Buzz` を追加する*/
-			if (num % ① == 0) {
-				② = result + "③";
+			if (num % 5 == 0) {
+				result = result + "Buzz";
 			}
             /*4. 変数 `result` の文字数が `空文字※` かどうか？を確認する
             - 空文字だったときだけ、変数 `result` に数字を文字列として加える*/
@@ -36,7 +36,7 @@ public class  FizzBuzz {
 	}
 }
 
-} 
+
 
  
  
