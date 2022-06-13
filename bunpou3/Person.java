@@ -1,22 +1,22 @@
 public class Person {
- public static Gender { MAN, WOMAN };	
-private Gender gender;
-	
+	public enum Gender { MAN, WOMAN };
+	private Gender gender;
+
 	public Person(Gender gender) {
 		this.gender = gender;
 	}
-	
+
 	public void speak() {
 		switch (gender) {
-			
-			case 1:
+
+			case MAN:
 				System.out.println("I'm a man");
-break;
-		    case 2:
+				break;
+			case WOMAN:
 				System.out.println("I'm a woman");
-break;
-default:
-}
+				break;
+			default:
+		}
 	}
 
 	public static void main(String[] args) {
@@ -26,11 +26,6 @@ default:
 		Person woman = new Person(Gender.WOMAN);
 		woman.speak();
 	}
+
+	
 }
-
-
-
-
-
-
-
